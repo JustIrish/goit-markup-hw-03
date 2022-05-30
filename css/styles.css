@@ -16,6 +16,16 @@
   --portfolio-backgr-color: #f5f4fa;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   color: var(--primary-text-color);
   background-color: var(--main-backgr-color);
@@ -26,6 +36,8 @@ body {
 }
 
 .list {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
@@ -43,6 +55,13 @@ body {
 }
 
 /*------------------ВЕРХНЯЯ ЛИНИЯ----------------- */
+
+.conteiner {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  outline: 2px solid red;
+}
 
 .logo {
   color: var(--accent-color);
@@ -90,9 +109,13 @@ body {
 
 .hero {
   background-color: var(--special-backgr-color);
+  text-align: center;
+  padding: 200px 0;
 }
 
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
   color: var(--second-text-color);
 
   font-weight: 900;
@@ -100,7 +123,6 @@ body {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  text-align: center;
 }
 
 .hero-btn {
@@ -113,6 +135,10 @@ body {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  border: 1px solid transparent;
 }
 
 .hero-btn:hover,
