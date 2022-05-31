@@ -16,14 +16,15 @@
   --portfolio-backgr-color: #f5f4fa;
 }
 
-html {
-  box-sizing: border-box;
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
 }
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
+img {
+  display: block;
 }
 
 body {
@@ -60,7 +61,13 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
+  padding: 0 15px;
   outline: 2px solid red;
+}
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .logo {
@@ -114,8 +121,9 @@ body {
 }
 
 .hero-title {
-  margin-top: 0;
-  margin-bottom: 30px;
+  max-width: 696px;
+  margin: 0 auto 30px;
+
   color: var(--second-text-color);
 
   font-weight: 900;
@@ -123,6 +131,7 @@ body {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .hero-btn {
@@ -148,6 +157,11 @@ body {
 
 /* -------------------СЕКЦИИ------------------ */
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .benefits-title {
   color: var(--title-text-color);
 
@@ -158,6 +172,10 @@ body {
 
 .benefits-text {
   line-height: 1.71;
+}
+
+.work {
+  padding-top: 0;
 }
 
 .work-title,
@@ -231,12 +249,21 @@ body {
 /* -------------------ПОДВАЛ------------------- */
 
 .footer {
+  padding: 60px 0;
   background-color: var(--special-backgr-color);
+}
+
+.logo {
+  margin-bottom: 20px;
 }
 
 .logo-footer,
 .location {
   color: var(--second-text-color);
+}
+
+.location {
+  margin-bottom: 9px;
 }
 
 .footer-contacts,
