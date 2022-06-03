@@ -65,9 +65,28 @@ body {
   outline: 2px solid red;
 }
 
-.header {
-  padding-top: 24px;
-  padding-bottom: 25px;
+.header-conteiner {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu-nav {
+  display: flex;
+  margin-left: 93px;
+}
+
+.item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contacts {
+  display: flex;
+  margin-left: auto;
 }
 
 .logo {
@@ -92,6 +111,9 @@ body {
 }
 
 .link {
+  display: block;
+  padding: 32px 0;
+
   color: var(--title-text-color);
   text-decoration: none;
 }
@@ -161,6 +183,10 @@ body {
   padding-bottom: 94px;
 }
 
+.benefits-list {
+  display: flex;
+}
+
 .benefits-title {
   margin-bottom: 10px;
   color: var(--title-text-color);
@@ -171,7 +197,6 @@ body {
 }
 
 .benefits-text {
-  max-width: 270px;
   line-height: 1.71;
 }
 
@@ -218,7 +243,7 @@ body {
 /* ---------------------ПОРТФОЛИО--------------------- */
 
 .filter {
-  margin-bottom: 50px; /*ПРОВЕРИТЬ */
+  display: flex;
 }
 
 .filter-btn {
@@ -244,6 +269,20 @@ body {
 
 .portfolio-link {
   text-decoration: none;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-item {
+  width: calc((100%-60px) / 3);
+  margin-right: 30px;
+}
+
+.portfolio-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .portfolio-desc {
@@ -274,7 +313,7 @@ body {
 
 .logo {
   display: inline-block;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 .logo-footer,
