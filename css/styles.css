@@ -67,6 +67,10 @@ body {
   outline: 2px solid red;
 }
 
+.header {
+  border: 1px solid #ececec;
+}
+
 .header-conteiner {
   display: flex;
   align-items: center;
@@ -277,6 +281,12 @@ body {
 
 .filter {
   display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.filter-item + .filter-item {
+  margin-left: 8px;
 }
 
 .filter-btn {
@@ -307,19 +317,16 @@ body {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
+  margin: -15px;
 }
 
 .portfolio-item {
-  width: calc((100%-60px) / 3);
-  margin-right: 30px;
-}
-
-.portfolio-item:nth-child(3n) {
-  margin-right: 0;
+  flex-basis: calc(100% / 3 - 30px);
+  margin: 15px;
 }
 
 .portfolio-desc {
-  padding: 20px 0;
+  padding: 20px 24px;
 }
 
 .portfolio-title {
