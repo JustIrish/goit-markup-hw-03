@@ -25,6 +25,8 @@ h4 {
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 body {
@@ -130,6 +132,9 @@ body {
 }
 
 .contact-link {
+  display: block;
+  padding: 32px 0;
+
   color: var(--primary-text-color);
   text-decoration: none;
 }
@@ -185,6 +190,12 @@ body {
 
 .benefits-list {
   display: flex;
+  margin-left: -30px;
+}
+
+.benefits-item {
+  width: calc(100% / 4 - 30px);
+  margin-left: 30px;
 }
 
 .benefits-title {
@@ -204,6 +215,16 @@ body {
   padding-top: 0;
 }
 
+.work-list {
+  display: flex;
+  margin-left: -30px;
+}
+
+.work-item {
+  width: calc(100% / 3 - 30px);
+  margin-left: 30px;
+}
+
 .work-title,
 .team-title {
   margin-bottom: 50px;
@@ -216,6 +237,16 @@ body {
 
 .team {
   background-color: var(--portfolio-backgr-color);
+}
+
+.team-list {
+  display: flex;
+  margin: -15px;
+}
+
+.team-card {
+  flex-basis: calc(100% / 4 - 30px);
+  margin: 15px;
 }
 
 .team-card {
@@ -233,11 +264,13 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  text-align: center;
 }
 
 .team-prof {
   font-size: 16px;
   line-height: 1.19;
+  text-align: center;
 }
 
 /* ---------------------ПОРТФОЛИО--------------------- */
@@ -311,9 +344,9 @@ body {
   background-color: var(--special-backgr-color);
 }
 
-.logo {
+.bottom-logo {
   display: inline-block;
-  /* margin-bottom: 20px; */
+  margin-bottom: 20px;
 }
 
 .logo-footer,
@@ -322,7 +355,7 @@ body {
 }
 
 .location,
-.contact-item {
+.contact-item:not(:last-child) {
   margin-bottom: 9px;
 }
 
@@ -333,5 +366,11 @@ body {
 }
 
 .footer-link {
+  text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--accent-color);
 }
